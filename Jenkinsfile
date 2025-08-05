@@ -1,3 +1,9 @@
+def COLOR_MAP = [
+  'SUCCESS': '#00FF00',
+  'FAILURE': '#FF0000',
+  'ABORTED': '#808080',
+  'UNSTABLE': '#FFFF00'
+]
 pipeline {
     agent any
     tools {
@@ -11,7 +17,7 @@ pipeline {
          NEXUS_PASS = 'admin'
          RELEASE_REPO = 'vprofile-release'
          CENTRAL_REPO = 'vpro-maven-central'
-         NEXUSIP = '172.31.39.192'
+         NEXUSIP = ''
          NEXUSPORT = '8081'
          NEXUS_GRP_REPO = 'vpro-maven-group'
          NEXUS_LOGIN = 'nexuslogin' 
